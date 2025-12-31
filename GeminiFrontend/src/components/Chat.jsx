@@ -39,8 +39,8 @@ const Chat = () => {
     setError(null);
 
     const url = id
-      ? `http://localhost:3001/api/conversation/${id}`
-      : `http://localhost:3001/api/conversation`;
+      ? `https://geminicontentgenerator-production.up.railway.app//api/conversation/${id}`
+      : `https://geminicontentgenerator-production.up.railway.app//api/conversation`;
 
     try {
       const res = await fetch(url, {

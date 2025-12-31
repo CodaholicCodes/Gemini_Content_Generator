@@ -10,7 +10,7 @@ const [error,setError]=useState(null);
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:3001/api/conversation')
+    fetch('https://geminicontentgenerator-production.up.railway.app//api/conversation')
       .then(res => res.json())
       .then(chats => {
         console.log(chats);

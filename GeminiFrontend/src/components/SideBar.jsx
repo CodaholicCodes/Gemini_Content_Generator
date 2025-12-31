@@ -14,7 +14,7 @@ const SideBar = () => {
 
   const handleDelete=(id)=>{
     
-     fetch( `http://localhost:3001/api/conversation/${id}`, {
+     fetch( `https://geminicontentgenerator-production.up.railway.app//api/conversation/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
